@@ -1,0 +1,38 @@
+<!DOCTYPE>
+<html lang=en>
+    <head>
+        <meta charset=utf-8>
+        <title>Slide Show Demo!</title>
+        <link rel="stylesheet" type="text/css" href="slide-show.css" />
+        <style>
+            html, body,h1,ul,li { margin: 0; padding: 0; }
+            html { background: #f9f9f9; }
+            body { padding: 20px; font: normal 14px/20px helvetica,arial,sans-serif; }
+            .clr { overflow: hidden; zoom: 1; }
+            .left { float: left; margin-right: 10px; }
+            .right { float: right; margin-left: 10px; }
+            h1 { margin-bottom: 20px; font-size: 26px; line-height: 40px; }
+            li { list-style: none; float: left; margin: 0 10px 10px 0; outline: 1px solid #ddd; background: #fff; }
+            li img { vertical-align: middle; }
+        </style>
+    </head>
+    <body>
+
+        <div class="clr">
+            <h1 class="left">Slide Show Demo!</h1>
+            <a class="right" href="http://mrcoles.com/">mrcoles.com</a>
+        </div>
+        <ul class="slides clr">
+            <li><a href="http://placekitten.com/600/600"><img width="80" height="80" src="http://placekitten.com/600/600" /></a></li>
+            <li><a href="http://placekitten.com/602/600"><img width="80" height="80" src="http://placekitten.com/602/600" /></a></li>
+            <li><a href="http://placekitten.com/200/200"><img width="80" height="80" src="http://placekitten.com/200/200" /></a></li>
+            <li><a href="http://placekitten.com/200/1000"><img width="16" height="80" src="http://placekitten.com/200/1000" style="padding:0 32px" /></a></li>
+            <li><a href="http://placekitten.com/2000/200"><img width="80" height="10" src="http://placekitten.com/1600/200" style="padding:35px 0" /></a></li>
+        </ul>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script src="slide-show.js"></script>
+        <script>
+            $('ul.slides').slideShow();
+        </script>
+    </body>
+</html>
