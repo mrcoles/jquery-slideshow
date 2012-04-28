@@ -16,8 +16,9 @@ p, pre { font-size: 16px; line-height: 24px; margin-bottom: 24px; }
 pre { background: #eee; padding: 16px 0; border-radius: 2px; }
 h3 { font-size: 16px; font-weight: bold; margin-bottom: 24px; padding-top: 24px; }
 
+
 html { position: relative; min-height: 100%; }
-html:after {
+body:after {
     content: "";
     position: absolute;
     left: -6px;
