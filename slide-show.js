@@ -1,7 +1,15 @@
-
+/*!
+ * Slide Show
+ *
+ * Copyright 2012, Peter Coles - http://mrcoles.com/
+ * Licensed under the MIT license.
+ * http://mrcoles.com/media/mit-license.txt
+ * Date: Fri April 27 20:00:00 2012 -0500
+ */
 (function($, undefined) {
 
     //TODO - preload prev && next?
+    //TODO - text too? and elt?
 
     var $viewer, $img, $prev, $next,
         srcs, index,
@@ -129,11 +137,21 @@
         }
     };
 
-    $.fn.slideShow = function(cfg) {
+    // $('.foo').slideShow('a.image');
+    // $('.foo').slideShow('li', {dataAttr: 'src'}); // if <li data-src="...">foo</li>
+
+    $.fn.slideShow = function(selector, cfg) {
+        if (cfg === undefined && $.isPlainObject(selector)) {
+            cfg = selector;
+            selector = undefined;
+        }
+
         cfg = $.extend({
             elts: 'a',
-            imgDataAttr: null
+            dataAttr: null
         }, cfg);
+
+        if (selector) cfg.elts = selector;
 
         return this.each(function() {
             var $this = $(this);
@@ -145,7 +163,7 @@
                     var srcs = $this.find(cfg.elts).map(function(i, elt) {
                         if (elt === self) { index = i; }
                         var src = cfg.imgDataAttr ? $(elt).data(cfg.imgDataAttr) : elt.href;
-                        return src; //TODO - text too? and elt?
+                        return src;
                     });
                     slideShow(srcs, index);
                 });

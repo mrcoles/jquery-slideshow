@@ -43,6 +43,10 @@
     opacity: 1;
 }
 
+#slide-show .prev:focus {
+    outline: none;
+}
+
 #slide-show .prev em {
     position: absolute;
     display: block;
