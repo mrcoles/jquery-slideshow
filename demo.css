@@ -13,7 +13,7 @@ ul { margin-bottom: 20px; }
 li { list-style: none; float: left; margin: 0 10px 10px 0; outline: 1px solid #ddd; background: #fff; }
 li img { vertical-align: middle; }
 p, pre { font-size: 16px; line-height: 24px; margin-bottom: 24px; }
-pre { background: #eee; padding: 16px 0; border-radius: 2px; }
+pre { background: #eee; padding: 12px 0; border-radius: 2px; }
 h3 { font-size: 16px; font-weight: bold; margin-bottom: 24px; padding-top: 24px; }
 
 

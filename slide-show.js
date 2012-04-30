@@ -92,7 +92,7 @@
             $viewer = $('<div>', {
                 id: viewerId,
                 click: function(evt) {
-                    if (evt.target === this) {
+                    if (evt.target === this || evt.target === $img.get(0)) {
                         hideViewer();
                     }
                 }
