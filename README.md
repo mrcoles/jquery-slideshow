@@ -1,5 +1,5 @@
 
-Image Slide Show Viewer
-=======================
+jQuery Image Slide Show Viewer
+==============================
 
-A simple way to view full size versions of thumbnails that was inspired by the Firefox view image page.
+A simple jQuery plugin to view full size versions of thumbnails. See index.html for more info.
