@@ -1,8 +1,7 @@
-
 jQuery Image Slide Show Viewer
 ==============================
 
-A simple jQuery plugin to view full size versions of thumbnails. View [the jqQery slideshow demo](http://mrcoles.com/slideshow/) or open `index.html` in a web browser for more info.
+A simple jQuery plugin to view full size versions of thumbnails. View [the jQery slideshow demo](http://mrcoles.com/slideshow/) or open `index.html` in a web browser for more info.
 
 The plugin automatically finds any links within the selected element and uses their `href`’s as images for the slide show. For example:
 
